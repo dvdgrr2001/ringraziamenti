@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ringraziamenti Laurea</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Ringraziamenti</h1>
+        <p class="description">Inserisci il tuo nome e il tuo cognome per vedere il ringraziamento a te dedicato!</p>
+        <form id="thankYouForm">
+            <label for="firstName">Nome</label>
+            <input type="text" id="firstName" name="firstName" required>
+            <label for="lastName">Cognome</label>
+            <input type="text" id="lastName" name="lastName" required>
+            <br> <!-- Aggiunta di un line break -->
+            <button type="button" onclick="generateThanks()">Visualizza il tuo ringraziamento!</button>
+        </form>
+        <div id="thankYouMessage" class="hidden"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

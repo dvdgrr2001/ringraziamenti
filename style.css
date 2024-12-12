@@ -1,0 +1,63 @@
+/* style.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px; /* Bordi più arrotondati */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+input[type="text"] {
+    width: 80%; /* Dimensione ridotta */
+    padding: 8px; /* Padding ridotto */
+    margin-bottom: 20px;
+    border: 2px solid #ccc;
+    border-radius: 20px; /* Bordi più arrotondati */
+    box-sizing: border-box;
+    text-align: center; /* Testo centrato */
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px; /* Bordi più arrotondati */
+    background-color: #87CEEB;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #00BFFF;
+}
+
+.hidden {
+    display: none;
+}
+
+#thankYouMessage {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+}
