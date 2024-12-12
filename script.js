@@ -2,7 +2,7 @@
 
 // Dizionario dei ringraziamenti personalizzati
 const customThankYous = {
-    "Flavia Marino": "Grazie a me per essermi impegnata!",
+    "Dusan Vlahovic": "Zingaro!",
     "Giulia Bianchi": "Un grande ringraziamento a Giulia Bianchi per il tuo aiuto e incoraggiamento!",
     // Aggiungi altre combinazioni di nome e cognome se necessario
 };
