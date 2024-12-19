@@ -15,7 +15,40 @@ const customThankYous = {
 // Funzione per generare i ringraziamenti
 function generateThanks() {
     const firstName = document.getElementById('firstName').value.trim();
+    const lastName = document.getElementById('lastName').value.trim();// Dizionario dei ringraziamenti personalizzati
+const customThankYous = {
+    "Flavia Fungo": "Al mio amore, la mia roccia nei momenti no...",
+    "Giannis BTZ": "Quella tua pacca sulla spalla...",
+    // Altri ringraziamenti...
+};
+
+// Normalizza le chiavi del dizionario
+const normalizedThankYous = Object.fromEntries(
+    Object.entries(customThankYous).map(([key, value]) => [key.toLowerCase(), value])
+);
+
+// Funzione per generare i ringraziamenti
+function generateThanks() {
+    const firstName = document.getElementById('firstName').value.trim();
     const lastName = document.getElementById('lastName').value.trim();
+    const fullName = `${firstName} ${lastName}`.trim().toLowerCase();
+
+    console.log("Nome completo:", fullName); // Debug del nome completo
+
+    let message;
+    if (normalizedThankYous[fullName]) {
+        message = normalizedThankYous[fullName];
+    } else {
+        message = "Grazie mille per il tuo supporto e la tua presenza in questo giorno speciale!";
+    }
+
+    console.log("Messaggio generato:", message); // Debug del messaggio generato
+
+    const thankYouMessageElement = document.getElementById('thankYouMessage');
+    thankYouMessageElement.textContent = message;
+    thankYouMessageElement.classList.remove('hidden');
+}
+
     const fullName = `${firstName} ${lastName}`;
     
     console.log("Nome inserito:", firstName); // Controlla il valore di Nome
